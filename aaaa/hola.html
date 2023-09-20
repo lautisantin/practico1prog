@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        fluid
+      </div>
+    <div class="container-xxl">
+        xxl
+      </div>
+      <div class="container">
+        container
+      </div>
+      <div class="container-sm">
+        sm
+      </div>
+      <hr>
+      <table class="table table-bordered">
+        <thead>
+          <tr class="table">
+            <th scope="col" id="tab">#</th>
+            <th scope="col" id="tab">Nombre</th>
+            <th scope="col" id="tab">Apellido</th>
+            <th scope="col" id="tab">Edad</th>
+            <th scope="col" id="tab">Email</th>
+            <th scope="col" id="tab">Genero</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="rw">1</th>
+            <td id="leo">Lionel</td>
+            <td id="leo">Messi</td>
+            <td id="leo">36</td>
+            <td id="leo">leomessi@gmail.com</td>
+            <td id="leo">Masculino</td>
+          </tr>
+          <tr>
+            <th scope="row" id="rw">2</th>
+            <td id="cr">Cristiano</td>
+            <td id="cr">Ronaldo</td>
+            <td id="cr">38</td>
+            <td id="cr">cr7@gmail.com</td>
+            <td id="cr">Masculino</td>
+          </tr>
+          <tr>
+            <th scope="row" id="rw">3</th>
+            <td id="fr">Franco</td>
+            <td id="fr">QPX</td>
+            <td id="fr">42</td>
+            <td id="fr">qpx@gmail.com</td>
+            <td id="fr">Masculino</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccione una opcion</option>
+        <option value="1">Messi</option>
+        <option value="2">CR7</option>
+        <option value="3">qpx</option>
+      </select>
+      <hr>
+      <label for="rangeInput">Mínimo</label>
+<input type="range" id="rangeInput" name="rangeInput" min="0" max="100" value="50">
+<label for="rangeInput">Máximo</label>
+
+<span id="valorRango">50</span>
+
+<script>
+  const rangeInput = document.getElementById("rangeInput");
+  const valorRango = document.getElementById("valorRango");
+
+  rangeInput.addEventListener("input", function() {
+    valorRango.textContent = this.value;
+  });
+</script>
+<hr>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#UNO" aria-expanded="true" aria-controls="collapseOne">
+          Messi
+        </button>
+      </h2>
+    </div>
+    <div id="UNO" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Lionel Andrés Messi Cuccittini, conocido como Leo Messi, es un futbolista argentino que juega como delantero o centrocampista y su equipo actual es el Inter Miami de la MLS de Estados Unidos. Es internacional con la selección de Argentina, equipo del que también es capitán.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#DOS" aria-expanded="false" aria-controls="collapseTwo">
+          CR7
+        </button>
+      </h2>
+    </div>
+    <div id="DOS" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Cristiano Ronaldo dos Santos Aveiro, conocido como Cristiano Ronaldo, es un futbolista portugués. Juega como extremo izquierdo o delantero y su equipo actual es el Al-Nassr F. C. de la Liga Profesional Saudí.​
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#TRES" aria-expanded="false" aria-controls="collapseThree">
+          qpx
+        </button>
+      </h2>
+    </div>
+    <div id="TRES" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Rocket League es un videojuego que combina el fútbol con los vehículos. Fue desarrollado por Psyonix y lanzado el 7 de julio de 2015. Fue lanzado Free to play en septiembre de 2020. Se encuentra disponible en español, y tiene modos de juego cooperativo, de un jugador y en línea.
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<hr>
+<div class="card" style="width: 18rem;">
+    <img src="Imagenes/messi.jpg" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Tarjeta</h5>
+      <p class="card-text">Se viene el octavo balon de oro.</p>
+      <a href="#" class="btn btn-primary">Volver al inicio</a>
+    </div>
+  </div>
+  <hr>
+  <div class="container mt-4">
+    <h2>Messi</h2>
+    <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores del Carrusel -->
+        <ul class="carousel-indicators">
+            <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#miCarrusel" data-slide-to="1"></li>
+            <li data-target="#miCarrusel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Imágenes del Carrusel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <center><img id="img" src="Imagenes/leo.jpg" alt="Imagen 1"></center>
+            </div>
+            <div class="carousel-item">
+                <center><img id="img" src="Imagenes/messi10.jpg" alt="Imagen 2"></center>
+            </div>
+            <div class="carousel-item">
+                <center><img id="img" src="Imagenes/topo.jpg" alt="Imagen 3"></center>
+            </div>
+        </div>
+
+        <!-- Controles del Carrusel -->
+        <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" id="control"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" id="control"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
